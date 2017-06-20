@@ -1,7 +1,7 @@
 {% if page.title %}
-<meta content="{{ page.title | replace: '"', '' }} - {{ site.title }}" property="og:title">
+<meta content="{{ page.title | replace: '"', '' }} - {{ site.title }} - {{ site.description }}" property="og:title">
 {% else %}
-<meta content="{{ site.title }}" property="og:title">
+<meta content="{{ site.title }} - {{ site.description }}" property="og:title">
 {% endif %}
 
 {% if page.url %}
@@ -34,9 +34,9 @@
 {% endif %}
 
 {% if page.title %}
-<meta content="{{ page.title | replace: '"', '' }} - {{ site.title }}" name="twitter:title">
+<meta content="{{ page.title | replace: '"', '' }} - {{ site.title }} - {{ site.description }}" name="twitter:title">
 {% else %}
-<meta content="{{ site.title }}" name="twitter:title">
+<meta content="{{ site.title }} - {{ site.description }}" name="twitter:title">
 {% endif %}
 
 {% if page.url %}
